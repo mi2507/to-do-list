@@ -1,25 +1,126 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    background-color:  #8ec5fc;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    background-color: white;
-    height: 100vh;
-    
+body {
+    background-color: blueviolet;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(90deg, #e0c3fc, #8ec7fc);
+    margin: 0 auto;
 }
 
-h1{
-    border-bottom: 2px solid rgb(202,202,202);
+.container {
+    background-color: #ffffff;
+    margin: 10vh auto;
+    /* height: 100vh; */
+}
+
+@media (min-width: 420px){
+    .container {
+        width: 60vw;
+        /* height: 80vh; */
+    }
+}
+
+@media (min-width: 960px){
+    .container {
+        width: 40vw;
+        margin: 10vh auto;
+        /* height: 80vh; */
+    }
+}
+
+h1 {
+    border-bottom: 2px solid rgb(202, 202, 202);
     text-align: center;
     font-size: 18px;
     padding: 25px 0;
+}
+
+.dflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    width: 100%;
+}
+
+.dflex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada {
+    padding: 40px;
+    text-align: center;
+    border: none;
+}
+
+input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add {
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ba7af8;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+p {
+    font-weight: bold;
+    word-break: break-all;
+    border: 1px solid #ececec;
+    padding: 14px;
+}
+
+.check {
+    color: rgb(202, 202, 202);
+    text-decoration: line-through;
+}
+
+.botoes {
+    display: none;
+}
+
+.listaDeTarefas {
+    display: flex;
+}
+
+.concluir {
+    border-style: none;
+    padding: 4px;
+    font-size: 0.9rem;
+    background-color: inherit;
+    color: #7a6b77;
+    margin: 0;
+}
+
+.apagar {
+    border-style: none;
+    padding: 4px;
+    font-size: 0.9rem;
+    background-color: inherit;
+    color: #7a6b77;
+    margin: 0;
+}
+
+.excluir-botao {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.0rem;
+    float: right;
+}
+
+.div-drag {
+    cursor: grab;
 }
